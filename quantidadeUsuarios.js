@@ -6,28 +6,7 @@ async function quantidadeUsuariosPorRede() {
     const dados = await res.json()
     const nomeDasRedes = Object.keys(dados)
     const quantidadeDeUsuarios = Object.values(dados)
-    color: getCSS('--secondary-color')
-}
-}
-},
-yaxis: {
-tickfont: tickConfig,
-title: {
-text: 'Bilhões de usuários ativos',
-font: {
-    color: getCSS('--secondary-color')
-}
-}
-}quantidadeUsuarios.js
-}
 
-const grafico = document.createElement('div')
-grafico.className = 'grafico'
-document.getElementById('graficos-container').appendChild(grafico)
-Plotly.newPlot(grafico, data, laytout)
-}
-
-quantidadeUsuariosPorRede()
     const data = [
         {
             x: nomeDasRedes, 
@@ -68,7 +47,7 @@ quantidadeUsuariosPorRede()
                     color: getCSS('--secondary-color')
                 }
             }
-        }quantidadeUsuarios.js
+        }
     }
 
     const grafico = document.createElement('div')
